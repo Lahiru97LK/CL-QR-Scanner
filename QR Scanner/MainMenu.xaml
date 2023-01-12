@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QR_Scanner.MainMenu">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="50">
+            <!--<Label Text="Welcome to Main menu page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+
+            <Button
+                x:Name="btnQRScan"
+                Clicked="btnQRScan_Clicked"
+                Text="SCAN QR"
+                BackgroundColor="#990724"
+                TextColor="White"
+                FontAttributes="Bold">
+            </Button>
+
+            <Button
+                x:Name="btnSearchByCode"
+                Clicked="btnSearchByCode_Clicked"
+                Text="SEARCH BY CODE" 
+                BackgroundColor="#990724"
+                TextColor="White"
+                FontAttributes="Bold">
+            </Button>
+
+            <Button
+                x:Name="btnReportBugs"
+                Clicked="btnReportBugs_Clicked"
+                Text="REPORT BUGS" 
+                BackgroundColor="#990724"
+                TextColor="White"
+                FontAttributes="Bold">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
