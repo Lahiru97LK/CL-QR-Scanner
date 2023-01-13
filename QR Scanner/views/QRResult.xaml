@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QR_Scanner.views.QRResult"
-             Title="Results">
+             Title="RESULTS">
     <ContentPage.Content>
         <StackLayout >
-            <Label Text="1 Record matched." FontSize="20" TextColor="Green" BackgroundColor="AliceBlue" FontAttributes="Bold" Padding="20"/>
-            <StackLayout Padding="20" BackgroundColor="AliceBlue">
+            <Label Text="1 Record matched." FontSize="20" TextColor="#00EA20" FontAttributes="Bold" Padding="20" HorizontalTextAlignment="Center" />
+            <StackLayout Padding="20" BackgroundColor="#EAF1F2" HeightRequest="500" Margin="30">
                 <Label x:Name="qrScannedResult"/>
             </StackLayout>
         </StackLayout>

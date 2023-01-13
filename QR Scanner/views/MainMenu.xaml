@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QR_Scanner.MainMenu"
-             Title="Main menu"
+             Title="MAIN MENU"
              >
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Padding="50">
@@ -15,7 +15,6 @@
                 TextColor="White"
                 FontAttributes="Bold"
                 CornerRadius="10"/>
-
 
             <Button
                 x:Name="btnSearchByCode"

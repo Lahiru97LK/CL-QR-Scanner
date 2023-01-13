@@ -4,5 +4,6 @@
              x:Class="QR_Scanner.App">
     <Application.Resources>
 
+        <Color x:Key="Primary">#FF96F3</Color>
     </Application.Resources>
 </Application>
