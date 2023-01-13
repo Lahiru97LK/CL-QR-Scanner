@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QR_Scanner.views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +12,7 @@ namespace QR_Scanner
             InitializeComponent();
 
             //MainPage = new MainPage();
+            //MainPage = new NavigationPage(new SplashScreen());
             MainPage = new NavigationPage (new MainMenu());
         }
 

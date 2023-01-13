@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QR_Scanner.MainMenu">
+             x:Class="QR_Scanner.MainMenu"
+             Title="Main menu"
+             >
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Padding="50">
-            <!--<Label Text="Welcome to Main menu page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
 
             <Button
                 x:Name="btnQRScan"
@@ -14,8 +13,9 @@
                 Text="SCAN QR"
                 BackgroundColor="#990724"
                 TextColor="White"
-                FontAttributes="Bold">
-            </Button>
+                FontAttributes="Bold"
+                CornerRadius="10"/>
+
 
             <Button
                 x:Name="btnSearchByCode"
@@ -23,8 +23,8 @@
                 Text="SEARCH BY CODE" 
                 BackgroundColor="#990724"
                 TextColor="White"
-                FontAttributes="Bold">
-            </Button>
+                FontAttributes="Bold"
+                CornerRadius="10"/>
 
             <Button
                 x:Name="btnReportBugs"
@@ -32,8 +32,8 @@
                 Text="REPORT BUGS" 
                 BackgroundColor="#990724"
                 TextColor="White"
-                FontAttributes="Bold">
-            </Button>
+                FontAttributes="Bold"
+                CornerRadius="10"/>
 
         </StackLayout>
     </ContentPage.Content>

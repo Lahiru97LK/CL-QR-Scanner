@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QR_Scanner.views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZXing;
 using ZXing.Net.Mobile.Forms;
 
 namespace QR_Scanner
@@ -20,6 +22,7 @@ namespace QR_Scanner
 
         private async void btnQRScan_Clicked(object sender, EventArgs e)
         {
+
             var scan = new ZXingScannerPage();
             await Navigation.PushModalAsync(scan);
 
@@ -28,7 +31,13 @@ namespace QR_Scanner
                 Device.BeginInvokeOnMainThread(async () =>
                 {
                     await Navigation.PopModalAsync();
-                    await DisplayAlert("Result", "" + result.Text, "OK");
+                    //await DisplayAlert("Result", "" + result.Text, "OK");
+
+                    Application.Current.Properties["QRCODE"] = result.Text;
+                    if (result.Text.Length > 0)
+                    {
+                        await Navigation.PushAsync(new QRResult());
+                    }
                 });
             };
         }

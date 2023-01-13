@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QR_Scanner.views.QRResult"
+             Title="Results">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="1 Record matched." FontSize="20" TextColor="Green" BackgroundColor="AliceBlue" FontAttributes="Bold" Padding="20"/>
+            <StackLayout Padding="20" BackgroundColor="AliceBlue">
+                <Label x:Name="qrScannedResult"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
